@@ -3,14 +3,14 @@
 
   function pager($page, $total, $pnumber, $page_link, $parameters)
   {
-    // Вычисляем число страниц в системе
+    // Calculate amount of pages
     $number = (int)($total/$pnumber);
     if((float)($total/$pnumber) - $number != 0) $number++;
-    // Проверяем есть ли ссылки слева
+    // Check on left links
     if($page - $page_link > 1)
     {
       echo "<a href=$_SERVER[PHP_SELF]?page=1{$parameters}> <nobr>[1-$pnumber]</nobr></a>&nbsp;<em class=currentpage><nobr>&nbsp;...&nbsp;</nobr> </em>&nbsp;";
-      // Есть
+      // Have one
       for($i = $page - $page_link; $i<$page; $i++)
       {
           echo "&nbsp;<a href=$_SERVER[PHP_SELF]?page=$i{$parameters}> <nobr>[".(($i - 1)*$pnumber + 1)."-".$i*$pnumber."]</nobr></a>&nbsp;";
@@ -18,16 +18,16 @@
     }
     else
     {
-      // Нет
+      // Have no
       for($i = 1; $i<$page; $i++)
       {
           echo "&nbsp;<a href=$_SERVER[PHP_SELF]?page=$i{$parameters}> <nobr>[".(($i - 1)*$pnumber + 1)."-".$i*$pnumber."]</nobr></a>&nbsp;";
       }
     }
-    // Проверяем есть ли ссылки справа
+    // Check on right links
     if($page + $page_link < $number)
     {
-      // Есть
+      // Have one
       for($i = $page; $i<=$page + $page_link; $i++)
       {
         if($page == $i)
@@ -39,7 +39,7 @@
     }
     else
     {
-      // Нет
+      // Have no
       for($i = $page; $i<=$number; $i++)
       {
         if($number == $i)
@@ -60,4 +60,4 @@
     }
     //echo "<br><br>";
   }
-?>
+

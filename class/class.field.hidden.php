@@ -35,11 +35,12 @@
       // Deprecated
       if (!get_magic_quotes_gpc())
       {
+        // Deprecated
         $this->value = mysql_escape_string($this->value);
       }
       if($this->is_required)
       {
-        if(empty($this->value)) return "Скрытое поле не заполнено";
+        if(empty($this->value)) return "Hidden field is empty";
       }
 
       return "";

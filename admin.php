@@ -81,8 +81,8 @@ $form->print_form();
         if($news[$i]['hide'] == 'show')
         {
           $showhide = "<a href=hide.php$url 
-                          title='Скрыть новость в блоке новостей'>
-                       Скрыть</a>";
+                          title='РЎРєСЂС‹С‚СЊ РЅРѕРІРѕСЃС‚СЊ РІ Р±Р»РѕРєРµ РЅРѕРІРѕСЃС‚РµР№'>
+                       РЎРєСЂС‹С‚СЊ</a>";
         }
         else
         {
@@ -100,11 +100,11 @@ $form->print_form();
           {
             $news[$i]['url'] = "http://{$news[$i][url]}";
           }
-          $news_url = "<br><b>Ссылка:</b> 
+          $news_url = "<br><b>РЎСЃС‹Р»РєР°:</b> 
                        <a href='{$news[$i][url]}'>{$news[$i][urltext]}</a>";
           if(empty($news[$i]['urltext']))
           {
-            $news_url = "<br><b>Ссылка:</b> 
+            $news_url = "<br><b>РЎСЃС‹Р»РєР°:</b> 
                          <a href='{$news[$i][url]}'>{$news[$i][url]}</a>";
           }
         }

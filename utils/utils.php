@@ -8,7 +8,7 @@
     if($page - $page_link > 1)
     {
       echo "<a href=$_SERVER[PHP_SELF]?page=1{$parameters}> <nobr>[1-$pnumber]</nobr></a>&nbsp;<em class=currentpage><nobr>&nbsp;...&nbsp;</nobr> </em>&nbsp;";
-      // ≈ÒÚ¸
+      // –ï—Å—Ç—å
       for($i = $page - $page_link; $i<$page; $i++)
       {
           echo "&nbsp;<a href=$_SERVER[PHP_SELF]?page=$i{$parameters}> <nobr>[".(($i - 1)*$pnumber + 1)."-".$i*$pnumber."]</nobr></a>&nbsp;";
@@ -58,10 +58,10 @@
 function print_page($postbody)
 {
     $postbody = preg_replace_callback(
-              "|([a-z‡-ˇ\d!]{35,})|i",
+              "|([a-z–∞-—è\d!]{35,})|i",
               "split_text",
               $postbody);
-    // “˝„Ë
+    // Tags
     $postbody = preg_replace("#\[b\](.+)\[\/b\]#isU",'<b>\\1</b>',$postbody);
     $postbody = preg_replace("#\[i\](.+)\[\/i\]#isU",'<i>\\1</i>',$postbody);
     $postbody = preg_replace("#\[url\][\s]*((?=http:)[\S]*)[\s]*\[\/url\]#si",'<a href="\\1" target=_blank>\\1</a>',$postbody);

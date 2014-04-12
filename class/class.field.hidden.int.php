@@ -7,24 +7,24 @@
 
   class field_hidden_int extends field_hidden
   {
-    // Метод, проверяющий корректность переданных данных
+    // Method checks if data is correct.
     function check()
     {
       if($this->is_required)
       {
-        // Поле обязательно к заполнению
+        // Required field
         if(!preg_match("|^[\d]+$|",$this->value))
         {
-          return "Скрытое поле должно быть целым числом";
+          return "Hidden field should be an integer.";
         }
       }
-      // Поле не обязательно к заполнению
+      // Non required field
       if(!preg_match("|^[\d]*$|",$this->value))
       {
-        return "Скрытое поле должно быть целым числом";
+        return "Hidden field should be an integer.";
       }
 
       return "";
     }
   }
-?>
+

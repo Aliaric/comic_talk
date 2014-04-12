@@ -90,7 +90,7 @@
       {
         if(empty($this->value))
         {
-          return "Поле \"".$this->caption."\" не заполнено";
+          return "Field \"".$this->caption."\" is empty";
         }
       }
 

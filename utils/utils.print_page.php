@@ -3,7 +3,7 @@
 
   function print_page($postbody) {
       $postbody = preg_replace_callback(
-                "|([a-z‡-ˇ\d!]{35,})|i",
+                "|([a-z–∞-—è\d!]{35,})|i",
                 "split_text",
                 $postbody);
       $postbody = preg_replace("#\[b\](.+)\[\/b\]#isU",'<b>\\1</b>',$postbody);
@@ -26,4 +26,4 @@
   function split_text($matches) {
     return wordwrap($matches[1], 35, ' ',1);
   }
-?>
+

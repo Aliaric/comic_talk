@@ -61,7 +61,7 @@
       "abvgdeeziyklmnoprstufh'iei");
       $st=strtr($st,"АБВГДЕЁЗИЙКЛМНОПРСТУФХЪЫЭ_",
       "ABVGDEEZIYKLMNOPRSTUFH'IEI");
-      // Затем - "многосимвольные".
+      // Than "morechars".
       $st=strtr($st, 
                       array(
                           "ж"=>"zh", "ц"=>"ts", "ч"=>"ch", "ш"=>"sh", 

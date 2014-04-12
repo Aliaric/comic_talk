@@ -75,7 +75,7 @@
       if((float)($total/$this->get_pnumber()) - $number != 0) $number++;
       // Check page number
       if($page <= 0 || $page > $number) return 0;
-      // Èçâëåêàåì ïîçèöèè òåêóùåé ñòğàíèöû
+      // Ğ˜Ğ·Ğ²Ğ»ĞµĞºĞ°ĞµĞ¼ Ğ¿Ğ¾Ğ·Ğ¸Ñ†Ğ¸Ğ¸ Ñ‚ĞµĞºÑƒÑ‰ĞµĞ¹ ÑÑ‚Ñ€Ğ°Ğ½Ğ¸Ñ†Ñ‹
       $arr = array();
 
       $first = ($page - 1)*$this->get_pnumber();
