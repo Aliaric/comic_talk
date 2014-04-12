@@ -1,0 +1,16 @@
+#wrapper {
+    margin: 10% 40%;
+}
+
+#form-wrapper {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#form-wrapper form {
+    margin: 5% 10%;
+}
+
+.button {
+
+}
