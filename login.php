@@ -42,7 +42,7 @@ try
 }
 catch(ExceptionObject $exc)
 {
-  require("dmn/utils/exception_object.php");
+  // require("dmn/utils/exception_object.php");
 }
 
 if(!empty($_POST))
@@ -65,7 +65,7 @@ if(!empty($_POST))
   }
   catch(ExceptionMySQL $exc)
   {
-    require("dmn/utils/exception_mysql.php");
+   // require("dmn/utils/exception_mysql.php");
   }
 }
 

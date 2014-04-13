@@ -3,10 +3,10 @@
 error_reporting(E_ALL & ~E_NOTICE);
 
 // DB connection
-require_once("/config/config.php");
+require_once("config/config.php");
 
 // Classes
-require_once("/config/class.config.dmn.php");
+require_once("config/class.config.dmn.php");
 
 // Simple SLQ injection check
 $_GET['id_news'] = intval($_GET['id_news']);

@@ -3,14 +3,14 @@
   error_reporting(E_ALL & ~E_NOTICE);
   session_start();
   // DB host
-  $dblocation = "localhost";
+  $dblocation = "127.0.0.1";
   // DB name.
   $port = '3306';
-  $dbname = "profis";
+  $dbname = "script";
   // DB User.
-  $dbuser = "root";
+  $dbuser = "admin5QBLGGB";
   // DB pass.
-  $dbpasswd = "";
+  $dbpasswd = "1Ck9Gc_32j-h";
 
   // Databases we operate.
   $tbl_accounts = 'system_accounts';

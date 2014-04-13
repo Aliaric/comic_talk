@@ -2,9 +2,9 @@
 
   error_reporting(E_ALL & ~E_NOTICE);
 
-  require_once("/config/config.php");
-  require_once("/config/class.config.dmn.php");
-  require_once("/utils/utils.print_page.php");
+  require_once("config/config.php");
+  require_once("config/class.config.dmn.php");
+  require_once("utils/utils.print_page.php");
 
 
 if(!$_SESSION['login_data'] xor $_POST['exit'] == 1) {
@@ -18,7 +18,7 @@ if(!$_SESSION['login_data'] xor $_POST['exit'] == 1) {
   $pageinfo = '<p class=help>Here you can overview and remove comments.</p>';
 
   // Template for top page
-  require_once("/utils/top.php");
+  require_once("utils/top.php");
 
 $exit = new field_hidden_int("exit",
   "",
@@ -137,14 +137,14 @@ $form->print_form();
   }
   catch(ExceptionMySQL $exc)
   {
-    require("/utils/exception_mysql.php");
+    // require("utils/exception_mysql.php");
   }
 
 
 
 
   // Bottom page template
-  require_once("/utils/bottom.php");
+  require_once("utils/bottom.php");
 ?>
 <script language="JavaScript">
   function delete_news(url)
