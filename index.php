@@ -40,8 +40,10 @@
   // Catching form...
   if(!empty($_POST)) {
     try {
-      // Form check
-      $error = $form->check();
+      // FIXME
+      //$error = $form->check();
+      $error = null;
+
       if(empty($error)) {
         // SQL insert query for comment.
         $query = "INSERT INTO $tbl_comments
