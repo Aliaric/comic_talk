@@ -9,7 +9,7 @@
   require_once("config/class.config.dmn.php");
 
   // Add mini framework.
-//  require_once("config/class.config.php");
+  //  require_once("config/class.config.php");
   // Top page template.
   require_once ("templates/top.php");
 
@@ -61,6 +61,7 @@
       }
     }
     catch(ExceptionMySQL $exc) {
+      $a = 123;
       // todo catch MYSQL exception
     }
   }

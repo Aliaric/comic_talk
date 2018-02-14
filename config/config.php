@@ -3,14 +3,14 @@
   error_reporting(E_ALL & ~E_NOTICE);
   session_start();
   // DB host
-  $dblocation = "localhost";
+  $dblocation = "mysql";
   // DB name.
   $port = '3306';
-  $dbname = "profis";
+  $dbname = "comic_talk";
   // DB User.
-  $dbuser = "root";
+  $dbuser = "admin";
   // DB pass.
-  $dbpasswd = "";
+  $dbpasswd = "admin";
 
   // Tables we operate.
   $tbl_accounts = 'system_accounts';
