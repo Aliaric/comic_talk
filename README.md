@@ -1,6 +1,6 @@
 # Comic Talk
 
-It was test task for[Pfofis group](https://profis-group.com), create a simple comment section.
+It was test task for[Profis group](https://profis-group.com), create a simple comment section.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Demo
 
-[Comic Talk](http://comictalk.flu.cc)
+[Comic Talk](http://comictalk.ddns.net)
 ```
 l:demo
 p:demo 
@@ -28,7 +28,7 @@ What things you need to install the software and how to install them
 
 ```
 1) Update config/config.php with your DB preferencies
-2) Import pump-A-rum dump
+2) Import comic_talk.sql dump
 ```
 
 
